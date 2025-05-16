@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    
+    <div class="gallery-grid">
+        <img src="https://th.bing.com/th/id/OIP.phJx6xyaAHc9NEE_EO5cgwHaFv?w=224&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="thumbnail" onclick="openImage('images/image1.jpg')">
+        <img src="https://th.bing.com/th/id/OIP.twShHXy5ikGjP-cjGlsVFQHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="thumbnail" onclick="openImage('images/image2.jpg')">
+        <img src="https://th.bing.com/th/id/OIP.QghJfUlTwSWzfSNZIeovMwHaEh?w=275&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="thumbnail" onclick="openImage('images/image3.jpg')">
+        <img src="https://th.bing.com/th/id/OIP.WpRmFAMvZIWjJQW3TGSktgHaEo?w=268&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="thumbnail" onclick="openImage('images/image3.jpg')">
+        <img src="https://th.bing.com/th/id/OIP.-D5xt6nfX4BGup0qkTmyiAHaFI?w=270&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="thumbnail" onclick="openImage('images/image3.jpg')">
+        <img src="https://th.bing.com/th/id/OIP.aoQX5arpchgXX43LyOpc9gHaEK?w=266&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="thumbnail" onclick="openImage('images/image3.jpg')">
+    </div>
+    
+    <!-- Enlarged Image Display -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeImage()"></span>
+        <img id="largeImage" src="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

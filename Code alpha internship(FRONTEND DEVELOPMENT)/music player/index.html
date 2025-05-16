@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <h2 id="song-title">GARUDA GAMANA TAVA</h2>
+        <audio id="audio" src="C:\Users\Gopika Sri\Downloads\[iSongs.info] 01 - Garuda Gamana Tava (Maha Vishnu Stotram).mp3"></audio>
+        <audio id="audio" src="C:\Users\Gopika Sri\Downloads\[iSongs.info] 03 - Come To The Party.mp3"></audio>
+        <div class="controls">
+            <button onclick="prevSong()">⏮</button>
+            <button onclick="playPause()">▶️</button>
+            <button onclick="nextSong()">⏭</button>
+        </div>
+        <input type="range" id="progress" value="0" onchange="setProgress()">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
